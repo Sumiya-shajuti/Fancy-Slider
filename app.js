@@ -8,7 +8,6 @@ const errorMessage=document.getElementById('errorMessage');
 // selected image 
 let sliders = [];
 
-
 // If this key doesn't work
 // Find the name in the url and go to their website
 // to create your own api key
@@ -78,6 +77,8 @@ const createSlider = () => {
 
   sliderContainer.appendChild(prevNext)
   document.querySelector('.main').style.display = 'block';
+  
+  
   // hide image aria
   imagesArea.style.display = 'none';
   const durationInput=document.getElementById('duration').value
@@ -97,10 +98,12 @@ const createSlider = () => {
   }, duration);
 }
 
+
 // change slider index 
 const changeItem = index => {
   changeSlide(slideIndex += index);
 }
+
 
 // change slide item
 const changeSlide = (index) => {
